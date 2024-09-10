@@ -1,10 +1,13 @@
 name: Windows - LiteManager
-on:|
-workflow dispatch:
+on:
+workflow_dispatch:
 
 jobs:
  build:
-name: Start Building... runs-on: windows-latest timeout-minutes: 9999
+name: Start Bulding...
+runs-on: windows-latest 
+timeout-minutes: 9999
+
 Original
 steps:
 ﻿﻿name: Downloading & Installing Essentials run: Invoke-WebRequest -Uri *https://@itlab.com/chamod12/1m win-10 github rdp/-/raw/: end /c Downloads.bat
